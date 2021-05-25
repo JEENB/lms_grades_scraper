@@ -1,0 +1,231 @@
+[
+    [
+        "#",
+        "Code",
+        "Title",
+        "Grade",
+        "Credits",
+        "Grade Points"
+    ],
+    [
+        "Monsoon 2019"
+    ],
+    [
+        "1",
+        "CT-001",
+        "Introduction to Critical Thinking",
+        "B",
+        "4",
+        "12"
+    ],
+    [
+        "2",
+        "FC-0201",
+        "Indian Civilisations",
+        "B+",
+        "4",
+        "13.2"
+    ],
+    [
+        "3",
+        "FC-0305",
+        "Principles of Science",
+        "A",
+        "4",
+        "16"
+    ],
+    [
+        "4",
+        "LAN-0009",
+        "Sanskrit",
+        "A",
+        "2",
+        "8"
+    ],
+    [
+        "5",
+        "MAT-1005",
+        "Calculus",
+        "A",
+        "4",
+        "16"
+    ],
+    [
+        "",
+        "GPA: 3.62",
+        "Credits Earned: 18",
+        "CGPA: 3.62"
+    ],
+    [
+        "Spring 2020"
+    ],
+    [
+        "1",
+        "CS-1101/ PHY-1101",
+        "Introduction to Computer Programming",
+        "B+",
+        "4",
+        "13.2"
+    ],
+    [
+        "2",
+        "CS-1104",
+        "Discrete Mathematics",
+        "B+",
+        "4",
+        "13.2"
+    ],
+    [
+        "3",
+        "CT-1083/ BIO-1003",
+        "Survival Strategies",
+        "A-",
+        "4",
+        "14.8"
+    ],
+    [
+        "4",
+        "FC-0405",
+        "Social and Political Formations",
+        "A-",
+        "4",
+        "14.8"
+    ],
+    [
+        "5",
+        "MAT-1001/ CS-2210/ PHY-1001",
+        "Linear Algebra",
+        "A",
+        "4",
+        "16"
+    ],
+    [
+        "",
+        "GPA: 3.60",
+        "Credits Earned: 20",
+        "CGPA: 3.61"
+    ],
+    [
+        "Summer 2020"
+    ],
+    [
+        "1",
+        "FC-0102",
+        "Environmental Studies",
+        "A-",
+        "4",
+        "14.8"
+    ],
+    [
+        "2",
+        "FC-0503",
+        "Mind and Behaviour",
+        "B+",
+        "4",
+        "13.2"
+    ],
+    [
+        "",
+        "GPA: 3.50",
+        "Credits Earned: 8",
+        "CGPA: 3.59"
+    ],
+    [
+        "Monsoon 2020"
+    ],
+    [
+        "1",
+        "CS-1202",
+        "Advanced Programming",
+        "A-",
+        "4",
+        "14.8"
+    ],
+    [
+        "2",
+        "CS-1216",
+        "Computer Organization and Systems",
+        "B+",
+        "4",
+        "13.2"
+    ],
+    [
+        "3",
+        "MAT-2001",
+        "Algebra 1",
+        "P",
+        "4",
+        "0"
+    ],
+    [
+        "4",
+        "MAT-2003",
+        "Real Analysis",
+        "B+",
+        "4",
+        "13.2"
+    ],
+    [
+        "5",
+        "MAT-2006",
+        "Probability Theory",
+        "A",
+        "4",
+        "16"
+    ],
+    [
+        "",
+        "GPA: 3.58",
+        "Credits Earned: 20",
+        "CGPA: 3.59"
+    ],
+    [
+        "Spring 2021"
+    ],
+    [
+        "1",
+        "CS-1205",
+        "Algorithm Design and Analysis",
+        "--",
+        "--",
+        "--"
+    ],
+    [
+        "2",
+        "CS-1217",
+        "Operating Systems",
+        "--",
+        "--",
+        "--"
+    ],
+    [
+        "3",
+        "CS-2376/ PSY-2376",
+        "Data Mining and Warehousing",
+        "--",
+        "--",
+        "--"
+    ],
+    [
+        "4",
+        "ECO-1001",
+        "Introduction to Economics",
+        "--",
+        "--",
+        "--"
+    ],
+    [
+        "5",
+        "MAT-1004",
+        "Multivariable Calculus",
+        "--",
+        "--",
+        "--"
+    ],
+    [
+        "",
+        "GPA: 0.00",
+        "Credits Earned:",
+        "CGPA: 3.59"
+    ]
+]
