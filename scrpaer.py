@@ -3,14 +3,22 @@ import time
 from selenium.webdriver.common.keys import Keys
 import getpass
 from selenium.webdriver.common.by import By
-import json
-from pathlib import Path
+import pandas as pd
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
+from email.mime.multipart import MIMEMultipart
+from smtplib import SMTP
+import smtplib
+
+
+
 sem_data = []
 user_data = []
+email = str(input("Email: "))
+pswd = getpass.getpass('Password: ')
 
 def gradesScraper():
-    email = str(input("Email: "))
-    pswd = getpass.getpass('Password:')
+    
     
 
     driver = webdriver.Chrome("./chromedriver.exe")
@@ -66,4 +74,55 @@ def gradesScraper():
 
 
 
-gradesScraper()
+if __name__ == "__main__":
+    gradesScraper()
+
+    first_name = email.split('.')
+
+    # appending data into grades list for published courses
+    grades_list = []
+    for data in reversed(sem_data):
+        if len(data) == 1:
+            break
+        if len(data) == 6:
+            if data[3] or data [4] or data[5] =='--':
+                print("{}: Grade not published".format(data[2]))
+            else:
+                grades_list.append([data[2], data[1], data[3], data[4], data[5]])
+    
+    if len(grades_list) > 0:
+        # converting the grades list into pandas dataframe
+        df = pd.DataFrame(grades_list, columns=['Course', 'Course Code', 'Grade', 'Credit', 'GPA'])
+
+
+        #emailing the df using your own email
+
+        msg = MIMEMultipart()
+        msg['Subject'] = "Grades Update"
+        msg['From'] = email
+
+
+        html = """\
+        <html>
+        <head></head>
+        <body>
+            <p> Hi {0},</p>
+            <p> Your Grades for the following courses have been published.</p>
+            {1}
+            <p> Thank You!! </p>
+        </body> 
+        </html>
+        """.format(first_name[0].capitalize(),df.to_html())
+
+        part1 = MIMEText(html, 'html')
+        msg.attach(part1)
+
+        s = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+        # uncomment if interested in the actual smtp conversation
+        # s.set_debuglevel(1)
+        # do the smtp auth; sends ehlo if it hasn't been sent already
+        s.login(email, pswd)
+
+        s.sendmail(email,email, msg.as_string())
+        s.quit()
+        
