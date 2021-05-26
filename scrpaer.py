@@ -10,7 +10,9 @@ from email.mime.multipart import MIMEMultipart
 from smtplib import SMTP
 import smtplib
 
-
+#### Tasks left
+### Excetpion handelling: 1) Password or email-id error
+### 2) emailing grades error
 
 sem_data = []
 user_data = []
