@@ -87,7 +87,7 @@ if __name__ == "__main__":
         if len(data) == 1:
             break
         if len(data) == 6:
-            if data[3] or data [4] or data[5] =='--':
+            if data[3]=='--' or data [4]=='--' or data[5] =='--':
                 print("{}: Grade not published".format(data[2]))
             else:
                 grades_list.append([data[2], data[1], data[3], data[4], data[5]])
